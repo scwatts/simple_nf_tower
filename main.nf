@@ -18,6 +18,7 @@ process ECHO_INPUT {
   """
   echo "meta: ${meta}"
   echo "data: ${data}" | tee ${task.process}_${task.index}.txt
+  sleep 5
   """
 }
 
