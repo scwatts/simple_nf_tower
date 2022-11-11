@@ -4,6 +4,8 @@
 process ECHO_INPUT {
   debug true
 
+  container 'public.ecr.aws/ubuntu/ubuntu:20.04_stable'
+
   publishDir 'output/'
 
   input:
