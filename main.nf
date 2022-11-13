@@ -6,7 +6,7 @@ process ECHO_INPUT {
 
   container 'public.ecr.aws/ubuntu/ubuntu:20.04_stable'
 
-  publishDir 'output/'
+  publishDir "${params.output_dir}"
 
   input:
   tuple val(meta), val(data)
